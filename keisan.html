@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>計算機</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+        function keisan() {
+          var elment1 = document.getElementById('int1')
+          var elment2 = document.getElementById('int2')
+
+          var elment3 = document.getElementById('int3')
+          var elment4 = document.getElementById('int4')
+
+          var result1 = parseInt(elment1.value) + parseInt(elment2.value)
+          var result2 = parseInt(elment3.value) - parseInt(elment4.value)
+
+          var result_text1 = document.getElementById('result1')
+          result_text1.textContent = result1;
+
+          var result_text2 = document.getElementById('result2')
+          result_text2.textContent = result2;
+
+        }
+    </script>
+    <input id="int1" type="text" name="" value="">
+    +
+    <input id="int2" type="text" name="" value="">
+    <button onclick="keisan()" type="button" name="button">計算</button>
+
+    <br>
+    <p>計算結果:</p>
+    <p id="result1"></p>
+
+    <input id="int3" type="text" name="" value="">
+    -
+    <input id="int4" type="text" name="" value="">
+    <button onclick="keisan()" type="button" name="button">計算</button>
+
+    <br>
+    <p>計算結果:</p>
+    <p id="result2"></p>
+
+
+  </body>
+</html>
